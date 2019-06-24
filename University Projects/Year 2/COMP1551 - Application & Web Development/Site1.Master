@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="friendsWithPaws.Site1" %>
+<!DOCTYPE html>
+<html>
+    <head runat="server">
+    <title>FirendsWithPaws</title>
+   <meta charset="utf-8" />
+      
+        <link rel="stylesheet" type="text/css" href="css/FWP.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js" > </script>
+        <script src="js/FWP.js"></script>
+
+        <style>
+            body{
+                margin:0px;
+                padding:0px;
+                width:100%;
+            }
+        </style>
+</head>
+ 
+
+   
+
+
+<body>
+<ul>
+<li><img src="img/logo.png" alt="logo" style="width:35px; height:35px;padding:14px 16px;" /></li>
+  <li><a href="defualt.aspx">Home</a></li>
+ <li><a href="addSpecies.aspx">Add Species</a></li>
+  <li><a href="addBreed.aspx">Add Breed</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Pet</a>
+    <div class="dropdown-content">
+      <a href="ViewPet.aspx">View Pets</a>
+      <a href="Addpet.aspx">Add Pet</a>
+      <a href="DeletePet.aspx">Delete Pet</a>
+    </div>
+  </li>
+ <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Vet Bills</a>
+    <div class="dropdown-content">
+      <a href="ViewPetBills.aspx">View Vet Bills</a>
+      <a href="AddVetbills.aspx">Add Vet Bills to Pet</a>
+    </div>
+  </li>
+</ul>
+
+  
+         
+
+
+        
+       
+     <form id="form1" runat="server">
+        <div>  
+     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+        </div>
+    </form>
+  
+    <div class="footer">
+    <p>&copy;friends with Paws 2017</p>
+    </div>
+
+</body>
+</html>
+
+
+
+
