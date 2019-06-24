@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 12.875, 8.5" name="LinkToSQL">
+  <DataContextMoniker Name="/LinkToSQLDataContext" />
+  <nestedChildShapes>
+    <classShape Id="b03bb294-03fb-4049-896e-c5ce59a75a17" absoluteBounds="3.625, 2.375, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/LinkToSQLDataContext/Driver" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9e866aa0-0df5-40e7-b4d8-3e8a09ae492f" absoluteBounds="3.64, 2.835, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="24c8b42d-875a-4920-b286-fd712030c75c" absoluteBounds="7.25, 3.875, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/LinkToSQLDataContext/DayLog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0f7d0281-3253-4e27-ae5c-b8ce84cecc59" absoluteBounds="7.265, 4.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.625 : 4.20274983723958); (7.25 : 4.20274983723958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LinkToSQLDataContext/Driver/Driver_DayLog" />
+      <nodes>
+        <classShapeMoniker Id="b03bb294-03fb-4049-896e-c5ce59a75a17" />
+        <classShapeMoniker Id="24c8b42d-875a-4920-b286-fd712030c75c" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="ae8b3e26-b788-4ba7-bf54-f329d5716c69" absoluteBounds="10.625, 5, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/LinkToSQLDataContext/JourneyLog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9214566f-a802-45ff-8ecf-1a9b92f01561" absoluteBounds="10.64, 5.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.25 : 5.32294840494792); (10.625 : 5.32294840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LinkToSQLDataContext/DayLog/DayLog_JourneyLog" />
+      <nodes>
+        <classShapeMoniker Id="24c8b42d-875a-4920-b286-fd712030c75c" />
+        <classShapeMoniker Id="ae8b3e26-b788-4ba7-bf54-f329d5716c69" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

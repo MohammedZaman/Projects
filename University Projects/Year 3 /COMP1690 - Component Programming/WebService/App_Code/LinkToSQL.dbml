@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DataSource" Class="LinkToSQLDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=sql-server;Persist Security Info=True;User ID=mz7340g" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="DataSourceConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Driver" Member="Drivers">
+    <Type Name="Driver">
+      <Column Name="Driver_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="First_Name" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Last_Name" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="User_Name" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Date_Of_Birth" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Association Name="Driver_DayLog" Member="DayLogs" ThisKey="Driver_Id" OtherKey="Driver_Id" Type="DayLog" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DayLog" Member="DayLogs">
+    <Type Name="DayLog">
+      <Column Name="Day_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Day_start" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Day_end" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Day_duration" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Driver_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="DayLog_JourneyLog" Member="JourneyLogs" ThisKey="Day_Id" OtherKey="Day_Id" Type="JourneyLog" />
+      <Association Name="Driver_DayLog" Member="Driver" ThisKey="Driver_Id" OtherKey="Driver_Id" Type="Driver" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.JourneyLog" Member="JourneyLogs">
+    <Type Name="JourneyLog">
+      <Column Name="Journey_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Journey_start" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Journey_end" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Journey_duration" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Day_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="DayLog_JourneyLog" Member="DayLog" ThisKey="Day_Id" OtherKey="Day_Id" Type="DayLog" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+</Database>

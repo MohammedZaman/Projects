@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>I-Rate</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="css/jquery.mobile-1.0rc1.min.css" />
+    <link rel="stylesheet" href="css/overallStyle.css" />
+
+    <meta charset="UTF-8">
+
+
+</head>
+
+<body>
+    <div data-role="page" style="background:white;">
+
+        <div data-role="header" style="background:#1d2120;">
+            <img class="logo" src="img/I-Rate.png">
+        </div>
+
+
+
+        <div data-role="main" class="ui-content">
+
+
+            <form>
+                <div class="space">
+                    <label for="search-1">Search</label>
+                    <input type="search" name="sInput" id="search-1" value="">
+
+                </div>
+                <div class="space">
+
+                    <label for="filter">Filter </label>
+                    <select name="select-native-4" name="filter" id="filter">
+                        <option>Select Filter</option>
+                        <option value="1">Restaurant Name</option>
+                        <option value="2">Restaurant Type</option>
+                        <option value="3">Location</option>
+                    </select>
+                </div>
+                <div class="space">
+                    <input type="button" onclick="validateSearch();" value="Search">
+                </div>
+
+            </form>
+
+            <div style="min-height:300px;" id="searchResults">
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+        <div data-role="footer">
+            <div data-role="navbar" data-grid="d" data-track-theme="b">
+                <ul>
+                    <li><a href="index.html" data-ajax="false">Home</a></li>
+                    <li><a href="search.html" class="ui-btn-active">Search</a></li>
+                    <li><a href="review.html" data-ajax="false">Add</a></li>
+                    <li><a href="Edit.html" data-ajax="false">Edit</a></li>
+                    <li><a href="View.html" data-ajax="false">View All</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div>
+
+    </div>
+
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.mobile-1.0rc1.min.js"></script>
+    <script src="js/Search.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

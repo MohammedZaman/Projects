@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://localhost:52144/Log.asmx?wsdl" docRef="http://localhost:52144/Log.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://localhost:52144/Log.asmx" xmlns:q1="http://cms.gre.ac.uk/pdc/jjj" binding="q1:LogSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://localhost:52144/Log.asmx" xmlns:q2="http://cms.gre.ac.uk/pdc/jjj" binding="q2:LogSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://cms.gre.ac.uk/pdc/jjj" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://cms.gre.ac.uk/pdc/jjj" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://cms.gre.ac.uk/pdc/jjj">
+      <s:element name="startDay">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="startDayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="startDayResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="endDay">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="endDayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="endDayResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="startJourney">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="startJourneyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="startJourneyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="endJourney">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="endJourneyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="endJourneyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="startDaySoapIn">
+    <wsdl:part name="parameters" element="tns:startDay" />
+  </wsdl:message>
+  <wsdl:message name="startDaySoapOut">
+    <wsdl:part name="parameters" element="tns:startDayResponse" />
+  </wsdl:message>
+  <wsdl:message name="endDaySoapIn">
+    <wsdl:part name="parameters" element="tns:endDay" />
+  </wsdl:message>
+  <wsdl:message name="endDaySoapOut">
+    <wsdl:part name="parameters" element="tns:endDayResponse" />
+  </wsdl:message>
+  <wsdl:message name="startJourneySoapIn">
+    <wsdl:part name="parameters" element="tns:startJourney" />
+  </wsdl:message>
+  <wsdl:message name="startJourneySoapOut">
+    <wsdl:part name="parameters" element="tns:startJourneyResponse" />
+  </wsdl:message>
+  <wsdl:message name="endJourneySoapIn">
+    <wsdl:part name="parameters" element="tns:endJourney" />
+  </wsdl:message>
+  <wsdl:message name="endJourneySoapOut">
+    <wsdl:part name="parameters" element="tns:endJourneyResponse" />
+  </wsdl:message>
+  <wsdl:portType name="LogSoap">
+    <wsdl:operation name="startDay">
+      <wsdl:input message="tns:startDaySoapIn" />
+      <wsdl:output message="tns:startDaySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="endDay">
+      <wsdl:input message="tns:endDaySoapIn" />
+      <wsdl:output message="tns:endDaySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="startJourney">
+      <wsdl:input message="tns:startJourneySoapIn" />
+      <wsdl:output message="tns:startJourneySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="endJourney">
+      <wsdl:input message="tns:endJourneySoapIn" />
+      <wsdl:output message="tns:endJourneySoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="LogSoap" type="tns:LogSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="startDay">
+      <soap:operation soapAction="http://cms.gre.ac.uk/pdc/jjj/startDay" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="endDay">
+      <soap:operation soapAction="http://cms.gre.ac.uk/pdc/jjj/endDay" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="startJourney">
+      <soap:operation soapAction="http://cms.gre.ac.uk/pdc/jjj/startJourney" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="endJourney">
+      <soap:operation soapAction="http://cms.gre.ac.uk/pdc/jjj/endJourney" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="LogSoap12" type="tns:LogSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="startDay">
+      <soap12:operation soapAction="http://cms.gre.ac.uk/pdc/jjj/startDay" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="endDay">
+      <soap12:operation soapAction="http://cms.gre.ac.uk/pdc/jjj/endDay" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="startJourney">
+      <soap12:operation soapAction="http://cms.gre.ac.uk/pdc/jjj/startJourney" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="endJourney">
+      <soap12:operation soapAction="http://cms.gre.ac.uk/pdc/jjj/endJourney" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Log">
+    <wsdl:port name="LogSoap" binding="tns:LogSoap">
+      <soap:address location="http://localhost:52144/Log.asmx" />
+    </wsdl:port>
+    <wsdl:port name="LogSoap12" binding="tns:LogSoap12">
+      <soap12:address location="http://localhost:52144/Log.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

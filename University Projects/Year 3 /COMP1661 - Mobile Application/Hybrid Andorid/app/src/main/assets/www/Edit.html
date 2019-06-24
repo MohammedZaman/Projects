@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>I-Rate</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="css/jquery.mobile-1.0rc1.min.css" />
+    <link rel="stylesheet" href="css/overallStyle.css" />
+
+
+    <meta charset="UTF-8">
+
+
+</head>
+
+<body>
+    <div data-role="page" style="background:white;">
+
+        <div data-role="header" style="background:#1d2120;">
+            <img class="logo" src="img/I-Rate.png">
+        </div>
+
+
+
+        <div data-role="main" class="ui-content">
+
+            <div class="space">
+                <label for="restSelect">Restaurant </label>
+                <select name="select-native-4" name="restType" onchange="loadRest()" id="restSelect">
+                    <option>Select Place</option>
+                </select>
+                <p id="err1"></p>
+            </div>
+
+            <div class="space">
+                <label for="restaurant">Restaurant</label>
+                <input type="text" id="restaurant" name="restaurant" placeholder="e.g. GBK">
+                <p id="err2"></p>
+            </div>
+            <div class="space">
+                <label for="restType">Restaurant Type </label>
+                <select name="select-native-4" name="restType" id="restType">
+                    <option>Select Type</option>
+                    <option value="1">Pizza</option>
+                    <option value="2">Indian</option>
+                    <option value="3">Grill</option>
+                    <option value="4">Chinese</option>
+                    <option value="5">Burgers</option>
+                    <option value="6">Kebab</option>
+                    <option value="7">American</option>
+                    <option value="8">Arabic</option>
+                    <option value="9">Bangladeshi</option>
+                    <option value="10">Fast Food</option>
+
+                </select>
+                <p id="err3"></p>
+            </div>
+
+            <div class="rForm">
+
+                <div class="space">
+                    <label for="date">Date of the visit</label>
+                    <input type="date" id="date" name="dateOfVisit" class="date-input-inline" data-inline="true" data-role="date">
+                    <p id="err4"></p>
+                </div>
+
+                <div class="space">
+                    <label for=" timeOfVisit">Time of the visit:</label>
+                    <input name="timeOfVisit" id="timeOfVisit" type="time" data-role="datebox" data-options='{"mode":"timebox", "useNewStyle":true, "overrideTimeFormat": 12, "themeButton": "b", "themeInput": "a", "theme": "b", "themeHeader": "b"}' />
+                    <p id="err5"></p>
+                </div>
+
+            </div>
+
+
+            <div class="space">
+                <label for="ppmSlider">Price per meal(£):</label>
+                <input type="range" name="ppmSlider" id="ppmSlider" value="0" min="0" max="50">
+                <p id="err6"></p>
+            </div>
+
+            <div class="space">
+                <label for="srSlider">Service Rating:</label>
+                <input type="range" name="srSlider" id="srSlider" value="0" min="0" max="5">
+                <p id="err7"></p>
+            </div>
+
+            <div class="space">
+                <label for="crSlider">Cleanliness Rating:</label>
+                <input type="range" name="crSlider" id="crSlider" value="0" min="0" max="5">
+                <p id="err8"></p>
+            </div>
+
+            <div class="space">
+                <label for="fqrSlider">Food quality Rating:</label>
+                <input type="range" name="fqrSlider" id="fqrSlider" value="0" min="0" max="5">
+                <p id="err9"></p>
+            </div>
+            <div class="space">
+                <label for="loc">Location:</label>
+                <br>
+                <input type="text" name="loc" id="loc">
+                </input>
+                <input type="hidden" id="latitude" name="latitude" value="">
+                <input type="hidden" id="longitude" name="longitude" value="">
+                <p id="err10"></p>
+            </div>
+
+            <div class="space">
+                <label for="notesTxt">9Notes(Optional)</label>
+                <br>
+                <textarea cols="0" value="" rows="8" name="notesTxt" id="notesTxt">
+                </textarea>
+                <br>
+            </div>
+
+            <div class="space">
+                <label for="nameOfReporterTxt">Name of Reporter</label>
+                <input type="text" name="nameOfReporterTxt" id="nameOfReporterTxt" placeholder="e.g. Harry">
+                <p id="err11"></p>
+            </div>
+
+            <div class="space">
+                <input type="button" onclick="validateUpdate();" value="Submit">
+            </div>
+
+
+
+            </form>
+
+
+        </div>
+
+        <div data-role="footer">
+            <div data-role="navbar" data-grid="d" data-track-theme="b">
+                <ul>
+                    <li><a href="index.html" data-ajax="false">Home</a></li>
+                    <li><a href="search.html" data-ajax="false">Search</a></li>
+                    <li><a href="review.html" data-ajax="false">Add</a></li>
+                    <li><a href="Edit.html" data-ajax="false" class="ui-btn-active">Edit</a></li>
+                    <li><a href="View.html" data-ajax="false">View All</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div>
+
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.mobile-1.0rc1.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0d26RqslIEWmn-m7JjZW6SGw-koOw9HI&libraries=places"></script>
+    <script src="js/edit.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+
+
+
+
+
+    </div>
+</body>
+
+</html>
