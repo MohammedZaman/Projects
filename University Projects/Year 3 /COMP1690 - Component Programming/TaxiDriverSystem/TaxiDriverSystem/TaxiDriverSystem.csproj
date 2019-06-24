@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{746C5F3C-76B2-471E-AA69-CEC308EAF560}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TaxiDriverSystem</RootNamespace>
+    <AssemblyName>TaxiDriverSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Components\PhoneBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\PhoneBox.Designer.cs">
+      <DependentUpon>PhoneBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\AssignController.cs" />
+    <Compile Include="Controller\DriverController.cs" />
+    <Compile Include="Controller\DrivingLicenceController.cs" />
+    <Compile Include="Controller\ExpiryController.cs" />
+    <Compile Include="Controller\GeoTestController.cs" />
+    <Compile Include="Controller\IncidentTypeController.cs" />
+    <Compile Include="Controller\LogInController.cs" />
+    <Compile Include="Controller\MainViewController.cs" />
+    <Compile Include="Controller\PredictionController.cs" />
+    <Compile Include="Controller\SearchContoller.cs" />
+    <Compile Include="Controller\SessionController.cs" />
+    <Compile Include="Controller\TrainTypeController.cs" />
+    <Compile Include="InnerJoin\DriLicence.cs" />
+    <Compile Include="InnerJoin\DriverGeoTest.cs" />
+    <Compile Include="InnerJoin\DriverSessions.cs" />
+    <Compile Include="Interfaces\IController.cs" />
+    <Compile Include="Interfaces\IView.cs" />
+    <Compile Include="Repositories\GenericRepository.cs" />
+    <Compile Include="Interfaces\IRepository.cs" />
+    <Compile Include="LinqToSQl.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LinqToSQl.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs" />
+    <Compile Include="Misc\ComboboxValue.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\InnerJoinRepository.cs" />
+    <Compile Include="Security\Encryption\PasswordEncrypt.cs" />
+    <Compile Include="Validation\AssignValidation.cs" />
+    <Compile Include="Validation\DriverValidation.cs" />
+    <Compile Include="Validation\DrivLicenceValidation.cs" />
+    <Compile Include="Validation\ExpiryValidation.cs" />
+    <Compile Include="Validation\GeoTestValidation.cs" />
+    <Compile Include="Controller\IncidentController.cs" />
+    <Compile Include="Validation\IncidentValidation.cs" />
+    <Compile Include="Validation\LogInValidation.cs" />
+    <Compile Include="Validation\SearchValidation.cs" />
+    <Compile Include="Validation\SessionValidation.cs" />
+    <Compile Include="Validation\IncidentTypeValidation.cs" />
+    <Compile Include="Validation\TrainTypeValidation.cs" />
+    <Compile Include="View\AssignView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\AssignView.Designer.cs">
+      <DependentUpon>AssignView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DriverView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\DriverView.Designer.cs">
+      <DependentUpon>DriverView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DrivingLicenceView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\DrivingLicenceView.Designer.cs">
+      <DependentUpon>DrivingLicenceView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\GeoTestView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\GeoTestView.Designer.cs">
+      <DependentUpon>GeoTestView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\IncidentTypeView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\IncidentTypeView.Designer.cs">
+      <DependentUpon>IncidentTypeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\IncidentView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\IncidentView.Designer.cs">
+      <DependentUpon>IncidentView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\LogInView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\LogInView.Designer.cs">
+      <DependentUpon>LogInView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MainConsole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MainConsole.Designer.cs">
+      <DependentUpon>MainConsole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PredictionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\PredictionView.Designer.cs">
+      <DependentUpon>PredictionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SearchView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\SearchView.Designer.cs">
+      <DependentUpon>SearchView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SessionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\SessionView.Designer.cs">
+      <DependentUpon>SessionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\TrainTypeView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\TrainTypeView.Designer.cs">
+      <DependentUpon>TrainTypeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ExpiryView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\ExpiryView.Designer.cs">
+      <DependentUpon>ExpiryView.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Components\PhoneBox.resx">
+      <DependentUpon>PhoneBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AssignView.resx">
+      <DependentUpon>AssignView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DriverView.resx">
+      <DependentUpon>DriverView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DrivingLicenceView.resx">
+      <DependentUpon>DrivingLicenceView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\GeoTestView.resx">
+      <DependentUpon>GeoTestView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\IncidentTypeView.resx">
+      <DependentUpon>IncidentTypeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\IncidentView.resx">
+      <DependentUpon>IncidentView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\LogInView.resx">
+      <DependentUpon>LogInView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MainConsole.resx">
+      <DependentUpon>MainConsole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PredictionView.resx">
+      <DependentUpon>PredictionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SearchView.resx">
+      <DependentUpon>SearchView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SessionView.resx">
+      <DependentUpon>SessionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\TrainTypeView.resx">
+      <DependentUpon>TrainTypeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ExpiryView.resx">
+      <DependentUpon>ExpiryView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="LinqToSQl.dbml.layout">
+      <DependentUpon>LinqToSQl.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="LinqToSQl.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>LinqToSQl.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

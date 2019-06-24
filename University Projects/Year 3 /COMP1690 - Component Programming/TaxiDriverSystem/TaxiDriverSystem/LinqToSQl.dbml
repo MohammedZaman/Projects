@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DataSource" Class="LinqToSQlDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=sql-server;Persist Security Info=True;User ID=mz7340g" SettingsObjectName="TaxiDriverSystem.Properties.Settings" SettingsPropertyName="DataSourceConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Admin" Member="Admins">
+    <Type Name="Admin">
+      <Column Name="Admin_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="First_Name" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Last_Name" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="User_Name" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Disciplinary" Member="Disciplinaries">
+    <Type Name="Disciplinary">
+      <Column Name="Disciplinary_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IncidentType_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Incident_report" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Driver_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="IncidentType_Disciplinary" Member="IncidentType" ThisKey="IncidentType_Id" OtherKey="IncidentType_Id" Type="IncidentType" IsForeignKey="true" />
+      <Association Name="Driver_Disciplinary" Member="Driver" ThisKey="Driver_Id" OtherKey="Driver_Id" Type="Driver" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.IncidentType" Member="IncidentTypes">
+    <Type Name="IncidentType">
+      <Column Name="IncidentType_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="incident_type" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Association Name="IncidentType_Disciplinary" Member="Disciplinaries" ThisKey="IncidentType_Id" OtherKey="IncidentType_Id" Type="Disciplinary" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Driver" Member="Drivers">
+    <Type Name="Driver">
+      <Column Name="Driver_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="First_Name" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Last_Name" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="User_Name" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Date_Of_Birth" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Association Name="Driver_Disciplinary" Member="Disciplinaries" ThisKey="Driver_Id" OtherKey="Driver_Id" Type="Disciplinary" />
+      <Association Name="Driver_Training" Member="Trainings" ThisKey="Driver_Id" OtherKey="Driver_Id" Type="Training" />
+      <Association Name="Driver_DayLog" Member="DayLogs" ThisKey="Driver_Id" OtherKey="Driver_Id" Type="DayLog" />
+      <Association Name="Driver_GeographicalTest" Member="GeographicalTests" ThisKey="Driver_Id" OtherKey="Driver_Id" Type="GeographicalTest" />
+      <Association Name="Driver_DrivingLicence" Member="DrivingLicences" ThisKey="Driver_Id" OtherKey="Driver_Id" Type="DrivingLicence" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Training" Member="Trainings">
+    <Type Name="Training">
+      <Column Name="Training_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Status" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="TrainingSession_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Driver_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Driver_Training" Member="Driver" ThisKey="Driver_Id" OtherKey="Driver_Id" Type="Driver" IsForeignKey="true" />
+      <Association Name="TrainingSession_Training" Member="TrainingSession" ThisKey="TrainingSession_Id" OtherKey="TrainingSession_Id" Type="TrainingSession" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TrainingSession" Member="TrainingSessions">
+    <Type Name="TrainingSession">
+      <Column Name="TrainingSession_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Date_of_session" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Start_Time" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="End_Time" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Expiry_Date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="TrainingType_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="TrainingSession_Training" Member="Trainings" ThisKey="TrainingSession_Id" OtherKey="TrainingSession_Id" Type="Training" />
+      <Association Name="TrainingType_TrainingSession" Member="TrainingType" ThisKey="TrainingType_Id" OtherKey="TrainingType_Id" Type="TrainingType" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TrainingType" Member="TrainingTypes">
+    <Type Name="TrainingType">
+      <Column Name="TrainingType_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Training_name" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Association Name="TrainingType_TrainingSession" Member="TrainingSessions" ThisKey="TrainingType_Id" OtherKey="TrainingType_Id" Type="TrainingSession" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DayLog" Member="DayLogs">
+    <Type Name="DayLog">
+      <Column Name="Day_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Day_start" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Day_end" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Day_duration" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Driver_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Driver_DayLog" Member="Driver" ThisKey="Driver_Id" OtherKey="Driver_Id" Type="Driver" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GeographicalTest" Member="GeographicalTests">
+    <Type Name="GeographicalTest">
+      <Column Name="GeoTest_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Location" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Expiry_date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Score" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Driver_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Driver_GeographicalTest" Member="Driver" ThisKey="Driver_Id" OtherKey="Driver_Id" Type="Driver" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DrivingLicence" Member="DrivingLicences">
+    <Type Name="DrivingLicence">
+      <Column Name="DrvingLicence_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Driver_number" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="Expiry_date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Driver_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Driver_DrivingLicence" Member="Driver" ThisKey="Driver_Id" OtherKey="Driver_Id" Type="Driver" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+</Database>
