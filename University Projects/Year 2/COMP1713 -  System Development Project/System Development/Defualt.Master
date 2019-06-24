@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Defualt.master.cs" Inherits="Systems_Development.Defualt" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Private Hire</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+          <link rel="stylesheet" type="text/css" href="css/Defualt.css">
+            <link rel="stylesheet" type="text/css" href="css/allPages.css">
+        <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+         <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+                 <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css' rel='stylesheet' type='text/css'>
+      <script src="http://code.jquery.com/jquery-1.11.3.min.js" > </script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+     
+        <script src="js/Maps.js"></script>
+        <script src="js/general.js"></script>
+         
+    </asp:ContentPlaceHolder>
+</head>
+    
+
+<body>
+    
+    <div class="menu">
+    <a href="Defualt.aspx"><img class="logo" src="img/sdpLogo.png"  /></a>
+    
+    <a href="Defualt.aspx" class="btn">Home</a>
+    <a href="ViewReview.aspx" class="btn">Reviews</a>
+    <a href="MakeBooking.aspx" class="btn">Make Booking</a>
+    <a href="contact.aspx" class="btn">Contact</a>
+    <div class="signIn">
+<a href="LogIn.aspx" class="btn" runat="server" id="signIn">Sign In</a>
+    <a href="SignUp.aspx" class="btn" runat="server" id="signUp">Sign Up</a>
+ <a onserverclick="logOut"  style="display:none;margin-top:-2px; " id="lO" runat="server" class="btn">Log Out</a>
+    </div>
+      
+
+
+<div class="dropdown" id="content" runat="server" style="display:none;">
+  <button class="dropbtn" style="cursor:pointer;" onServerClick="account" id="profile" runat="server"><span style="padding:0px 30px;" id="signInState" runat="server"></span></button>
+  <div  class="dropdown-content" style="padding:2px;">
+    <a href="viewReceipt.aspx">View Receipts</a>
+    <a href="MakeEnquiry.aspx">Make Enquriy</a>
+    <a href="MakeReview.aspx">Write Review</a>
+  </div>
+</div>
+
+       
+    
+
+
+</div>
+   
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+<div class="footer">
+       <div class="icon-bar">
+  <a href="https://www.android.com/" id="android"><i class="fa fa-android"></i></a> 
+  <a href="https://en-gb.facebook.com/"id="fb"><i class="fa fa-facebook"></i></a> 
+  <a href="https://twitter.com/twitter?lang=en"id="twitter"><i class="fa fa-twitter"></i></a> 
+  <a href="https://www.instagram.com/?hl=en"id="ig"><i class="fa fa-instagram"></i></a>
+  <a href="https://www.snapchat.com/l/en-gb/"id="sc"><i class="fa fa-snapchat-ghost"></i></a> 
+</div>
+    <p>Copyright<i class="fa fa-copyright" aria-hidden="true"></i>Private Hire 2018</p>
+ 
+</div>
+
+ 
+</body>
+</html>

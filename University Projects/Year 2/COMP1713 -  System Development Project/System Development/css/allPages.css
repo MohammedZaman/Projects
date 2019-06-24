@@ -1,0 +1,61 @@
+﻿.form {
+    padding: 0px 5% 5% 5%;
+    margin: 5% 20% 5% 20%;
+    background-color: #E8E8E8;
+   
+}
+.space {
+    margin: 2% 10% 2% 10%;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    padding: 2%;
+    margin-left: -10%;
+    margin-right: -10%;
+    background-color: #464646;
+}
+.button {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: #464646;
+    padding: 8px 20px 10px 20px;
+    text-decoration: none;
+    float: right;
+    margin-right: 75px;
+}
+    .button:hover {
+  opacity:0.8;
+    }
+
+.textboxspace {
+    padding: 6px;
+    font-size: 16px;
+    border-width: 1px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: solid;
+    border-radius: 0px;
+    box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+    text-shadow: undefined 0px 0px 5px 5px rgba(66,66,66,.75);
+}
+
+.enquiryLabel {
+    margin-bottom: 100px;
+  
+}
+
+
+
+
+
