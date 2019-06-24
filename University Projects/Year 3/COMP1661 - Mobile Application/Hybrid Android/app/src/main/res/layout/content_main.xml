@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0dp">
+
+
+        <ScrollView
+            android:id="@+id/Notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <RelativeLayout
+                android:id="@+id/rel2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="0dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="16dp">
+
+                <EditText
+                    android:id="@+id/nameEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name"
+                    android:layout_marginTop="5dp"
+                    android:inputType="textShortMessage" />
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/notesEdit"
+                    android:layout_marginTop="5dp"
+                    android:text="Name of Reporter"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/notesEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/notesTxt"
+                    android:layout_marginTop="5dp"
+                    android:inputType="textMultiLine" />
+
+                <TextView
+                    android:id="@+id/notesTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/qSlider"
+                    android:layout_marginTop="5dp"
+                    android:text="Notes(Optional)"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.AppCompatSeekBar
+                    android:id="@+id/qSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/qualValueTxt"
+                    android:layout_marginTop="1dp"
+                    android:max="5" />
+
+                <TextView
+                    android:id="@+id/qualValueTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/qualityRateTxt"
+                    android:layout_marginTop="5dp"
+                    android:autoText="false"
+                    android:clickable="true"
+                    android:inputType="textShortMessage" />
+
+                <TextView
+                    android:id="@+id/qualityRateTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cSlider"
+                    android:layout_marginTop="5dp"
+                    android:text="Food Quality Rating"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.AppCompatSeekBar
+                    android:id="@+id/cSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cleanValueTxt"
+                    android:layout_marginTop="1dp"
+                    android:max="5" />
+
+                <TextView
+                    android:id="@+id/cleanValueTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cleanRateTxt"
+                    android:layout_marginTop="5dp"
+                    android:autoText="false"
+                    android:clickable="true"
+                    android:inputType="textShortMessage" />
+
+                <TextView
+                    android:id="@+id/cleanRateTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/srSlider"
+                    android:layout_marginTop="5dp"
+                    android:text="Cleanliness Rating"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.AppCompatSeekBar
+                    android:id="@+id/srSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/serviceValueTxt"
+                    android:layout_marginTop="1dp"
+                    android:max="5" />
+
+                <TextView
+                    android:id="@+id/serviceValueTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/serviceRatingTxt"
+                    android:layout_marginTop="5dp"
+                    android:autoText="false"
+                    android:clickable="true"
+                    android:inputType="textShortMessage" />
+
+                <TextView
+                    android:id="@+id/serviceRatingTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ppmSlider"
+                    android:layout_marginTop="5dp"
+                    android:text="Service Rating"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.AppCompatSeekBar
+                    android:id="@+id/ppmSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ppmValueTxt"
+                    android:layout_marginTop="1dp"
+                    android:max="50" />
+
+                <EditText
+                    android:id="@+id/tovTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tovLbl"
+                    android:layout_marginTop="5dp"
+                    android:autoText="false"
+                    android:clickable="true"
+                    android:inputType="textShortMessage"
+                    tools:focusable="false" />
+
+                <TextView
+                    android:id="@+id/ppmSliderTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tovTxt"
+                    android:layout_marginTop="5dp"
+                    android:text="Price Per Meal"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="0dp"
+                    android:layout_below="@+id/nameEdit"
+                    android:text="Submit" />
+
+                <TextView
+                    android:id="@+id/ppmValueTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ppmSliderTxt"
+                    android:layout_marginTop="5dp"
+                    android:autoText="false"
+                    android:clickable="true"
+                    android:inputType="textShortMessage" />
+
+                <TextView
+                    android:id="@+id/tovLbl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dovTxt"
+                    android:layout_marginTop="5dp"
+                    android:text="Time of Visit"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/dovTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dovLbl"
+                    android:layout_marginTop="5dp"
+                    android:autoText="false"
+                    android:clickable="true"
+                    android:enabled="true"
+                    android:inputType="none"
+                    tools:focusable="false" />
+
+
+                <TextView
+                    android:id="@+id/dovLbl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/restaurantType"
+                    android:layout_marginTop="5dp"
+                    android:text="Date Of Visit"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/restaurantLbl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:text="Restaurant"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/restaurantTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/restaurantLbl"
+                    android:layout_marginTop="5dp"
+                    android:inputType="textShortMessage" />
+
+                <TextView
+                    android:id="@+id/restaurantTypeTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/restaurantTxt"
+                    android:layout_marginTop="5dp"
+                    android:text="Restaurant Type"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/restaurantType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/restaurantTypeTxt"
+                    android:layout_marginTop="5dp"
+                    android:inputType="textShortMessage" />
+
+
+            </RelativeLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+</FrameLayout>
