@@ -1,0 +1,100 @@
+C:\Users\Daedelus\Documents\sysprog\TCP_Server\TCP_Server\bin\Debug\TCP_Server.exe
+C:\Users\Daedelus\Documents\sysprog\TCP_Server\TCP_Server\bin\Debug\TCP_Server.pdb
+C:\Users\Daedelus\Documents\sysprog\TCP_Server\TCP_Server\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Daedelus\Documents\sysprog\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.About_Form.resources
+C:\Users\Daedelus\Documents\sysprog\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.TCP_Server_Form.resources
+C:\Users\Daedelus\Documents\sysprog\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.Properties.Resources.resources
+C:\Users\Daedelus\Documents\sysprog\TCP_Server\TCP_Server\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Daedelus\Documents\sysprog\TCP_Server\TCP_Server\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Daedelus\Documents\sysprog\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.exe
+C:\Users\Daedelus\Documents\sysprog\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.pdb
+F:\Users\Daedelus\Documents\sysprog\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.exe
+F:\Users\Daedelus\Documents\sysprog\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.pdb
+F:\Users\Daedelus\Documents\sysprog\TCP_Server\TCP_Server\bin\Debug\TCP_Server.exe
+F:\Users\Daedelus\Documents\sysprog\TCP_Server\TCP_Server\bin\Debug\TCP_Server.pdb
+F:\Users\Daedelus\Documents\sysprog\TCP_Server\TCP_Server\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\Users\Daedelus\Documents\sysprog\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.About_Form.resources
+F:\Users\Daedelus\Documents\sysprog\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.TCP_Server_Form.resources
+F:\Users\Daedelus\Documents\sysprog\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.Properties.Resources.resources
+F:\Users\Daedelus\Documents\sysprog\TCP_Server\TCP_Server\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\Users\Daedelus\Documents\sysprog\TCP_Server\TCP_Server\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\mz7340g\Downloads\CSharpSampleCode_ZipOfProjectZips\TCP_Server_CSharp_WithStructureAndSerialiseDeserialise\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.csprojResolveAssemblyReference.cache
+C:\Users\mz7340g\Downloads\CSharpSampleCode_ZipOfProjectZips\TCP_Server_CSharp_WithStructureAndSerialiseDeserialise\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.About_Form.resources
+C:\Users\mz7340g\Downloads\CSharpSampleCode_ZipOfProjectZips\TCP_Server_CSharp_WithStructureAndSerialiseDeserialise\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.TCP_Server_Form.resources
+C:\Users\mz7340g\Downloads\CSharpSampleCode_ZipOfProjectZips\TCP_Server_CSharp_WithStructureAndSerialiseDeserialise\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.Properties.Resources.resources
+C:\Users\mz7340g\Downloads\CSharpSampleCode_ZipOfProjectZips\TCP_Server_CSharp_WithStructureAndSerialiseDeserialise\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.csproj.GenerateResource.Cache
+C:\Users\mz7340g\Downloads\CSharpSampleCode_ZipOfProjectZips\TCP_Server_CSharp_WithStructureAndSerialiseDeserialise\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.csproj.CoreCompileInputs.cache
+C:\Users\mz7340g\Downloads\CSharpSampleCode_ZipOfProjectZips\TCP_Server_CSharp_WithStructureAndSerialiseDeserialise\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.exe
+C:\Users\mz7340g\Downloads\CSharpSampleCode_ZipOfProjectZips\TCP_Server_CSharp_WithStructureAndSerialiseDeserialise\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.pdb
+C:\Users\mz7340g\Downloads\CSharpSampleCode_ZipOfProjectZips\TCP_Server_CSharp_WithStructureAndSerialiseDeserialise\TCP_Server\TCP_Server\bin\Debug\TCP_Server.exe
+C:\Users\mz7340g\Downloads\CSharpSampleCode_ZipOfProjectZips\TCP_Server_CSharp_WithStructureAndSerialiseDeserialise\TCP_Server\TCP_Server\bin\Debug\TCP_Server.pdb
+\\student.gre-ad.gre.ac.uk\USR\Vol2\mz7340g\Documents\Systems Programming\systems programing(29th Jan)\TCP_Server\TCP_Server\TCP_Server\bin\Debug\TCP_Server.exe
+\\student.gre-ad.gre.ac.uk\USR\Vol2\mz7340g\Documents\Systems Programming\systems programing(29th Jan)\TCP_Server\TCP_Server\TCP_Server\bin\Debug\TCP_Server.pdb
+\\student.gre-ad.gre.ac.uk\USR\Vol2\mz7340g\Documents\Systems Programming\systems programing(29th Jan)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.csprojResolveAssemblyReference.cache
+\\student.gre-ad.gre.ac.uk\USR\Vol2\mz7340g\Documents\Systems Programming\systems programing(29th Jan)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.About_Form.resources
+\\student.gre-ad.gre.ac.uk\USR\Vol2\mz7340g\Documents\Systems Programming\systems programing(29th Jan)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.TCP_Server_Form.resources
+\\student.gre-ad.gre.ac.uk\USR\Vol2\mz7340g\Documents\Systems Programming\systems programing(29th Jan)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.Properties.Resources.resources
+\\student.gre-ad.gre.ac.uk\USR\Vol2\mz7340g\Documents\Systems Programming\systems programing(29th Jan)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.csproj.GenerateResource.Cache
+\\student.gre-ad.gre.ac.uk\USR\Vol2\mz7340g\Documents\Systems Programming\systems programing(29th Jan)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.csproj.CoreCompileInputs.cache
+\\student.gre-ad.gre.ac.uk\USR\Vol2\mz7340g\Documents\Systems Programming\systems programing(29th Jan)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.exe
+\\student.gre-ad.gre.ac.uk\USR\Vol2\mz7340g\Documents\Systems Programming\systems programing(29th Jan)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.pdb
+C:\Users\mz7340g\Downloads\systems programing(29th Jan)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.csprojResolveAssemblyReference.cache
+C:\Users\mz7340g\Downloads\systems programing(29th Jan)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.About_Form.resources
+C:\Users\mz7340g\Downloads\systems programing(29th Jan)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.TCP_Server_Form.resources
+C:\Users\mz7340g\Downloads\systems programing(29th Jan)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.Properties.Resources.resources
+C:\Users\mz7340g\Downloads\systems programing(29th Jan)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.csproj.GenerateResource.Cache
+C:\Users\mz7340g\Downloads\systems programing(29th Jan)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.csproj.CoreCompileInputs.cache
+C:\Users\mz7340g\Downloads\systems programing(29th Jan)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.exe
+C:\Users\mz7340g\Downloads\systems programing(29th Jan)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.pdb
+C:\Users\mz7340g\Downloads\systems programing(29th Jan)\TCP_Server\TCP_Server\TCP_Server\bin\Debug\TCP_Server.exe
+C:\Users\mz7340g\Downloads\systems programing(29th Jan)\TCP_Server\TCP_Server\TCP_Server\bin\Debug\TCP_Server.pdb
+C:\Users\mz7340g\Downloads\systems programing(26th March)\TCP_Server\TCP_Server\TCP_Server\bin\Debug\TCP_Server.exe
+C:\Users\mz7340g\Downloads\systems programing(26th March)\TCP_Server\TCP_Server\TCP_Server\bin\Debug\TCP_Server.pdb
+C:\Users\mz7340g\Downloads\systems programing(26th March)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.csprojResolveAssemblyReference.cache
+C:\Users\mz7340g\Downloads\systems programing(26th March)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.About_Form.resources
+C:\Users\mz7340g\Downloads\systems programing(26th March)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.TCP_Server_Form.resources
+C:\Users\mz7340g\Downloads\systems programing(26th March)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.Properties.Resources.resources
+C:\Users\mz7340g\Downloads\systems programing(26th March)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.csproj.GenerateResource.Cache
+C:\Users\mz7340g\Downloads\systems programing(26th March)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.csproj.CoreCompileInputs.cache
+C:\Users\mz7340g\Downloads\systems programing(26th March)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.exe
+C:\Users\mz7340g\Downloads\systems programing(26th March)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.pdb
+\\student.gre-ad.gre.ac.uk\USR\Vol2\mz7340g\Documents\Systems Programming\systems programing(29th march)\TCP_Server\TCP_Server\TCP_Server\bin\Debug\TCP_Server.exe
+\\student.gre-ad.gre.ac.uk\USR\Vol2\mz7340g\Documents\Systems Programming\systems programing(29th march)\TCP_Server\TCP_Server\TCP_Server\bin\Debug\TCP_Server.pdb
+\\student.gre-ad.gre.ac.uk\USR\Vol2\mz7340g\Documents\Systems Programming\systems programing(29th march)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.csprojResolveAssemblyReference.cache
+\\student.gre-ad.gre.ac.uk\USR\Vol2\mz7340g\Documents\Systems Programming\systems programing(29th march)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.About_Form.resources
+\\student.gre-ad.gre.ac.uk\USR\Vol2\mz7340g\Documents\Systems Programming\systems programing(29th march)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.TCP_Server_Form.resources
+\\student.gre-ad.gre.ac.uk\USR\Vol2\mz7340g\Documents\Systems Programming\systems programing(29th march)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.Properties.Resources.resources
+\\student.gre-ad.gre.ac.uk\USR\Vol2\mz7340g\Documents\Systems Programming\systems programing(29th march)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.csproj.GenerateResource.Cache
+\\student.gre-ad.gre.ac.uk\USR\Vol2\mz7340g\Documents\Systems Programming\systems programing(29th march)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.csproj.CoreCompileInputs.cache
+\\student.gre-ad.gre.ac.uk\USR\Vol2\mz7340g\Documents\Systems Programming\systems programing(29th march)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.exe
+\\student.gre-ad.gre.ac.uk\USR\Vol2\mz7340g\Documents\Systems Programming\systems programing(29th march)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.pdb
+C:\Users\mz7340g\Downloads\systems programing(29th march)\TCP_Server\TCP_Server\TCP_Server\bin\Debug\TCP_Server.exe
+C:\Users\mz7340g\Downloads\systems programing(29th march)\TCP_Server\TCP_Server\TCP_Server\bin\Debug\TCP_Server.pdb
+C:\Users\mz7340g\Downloads\systems programing(29th march)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.csprojResolveAssemblyReference.cache
+C:\Users\mz7340g\Downloads\systems programing(29th march)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.About_Form.resources
+C:\Users\mz7340g\Downloads\systems programing(29th march)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.TCP_Server_Form.resources
+C:\Users\mz7340g\Downloads\systems programing(29th march)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.Properties.Resources.resources
+C:\Users\mz7340g\Downloads\systems programing(29th march)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.csproj.GenerateResource.Cache
+C:\Users\mz7340g\Downloads\systems programing(29th march)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.csproj.CoreCompileInputs.cache
+C:\Users\mz7340g\Downloads\systems programing(29th march)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.exe
+C:\Users\mz7340g\Downloads\systems programing(29th march)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.pdb
+C:\Users\mz7340g\Downloads\systems programing(31st March)\TCP_Server\TCP_Server\TCP_Server\bin\Debug\TCP_Server.exe
+C:\Users\mz7340g\Downloads\systems programing(31st March)\TCP_Server\TCP_Server\TCP_Server\bin\Debug\TCP_Server.pdb
+C:\Users\mz7340g\Downloads\systems programing(31st March)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.csprojResolveAssemblyReference.cache
+C:\Users\mz7340g\Downloads\systems programing(31st March)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.About_Form.resources
+C:\Users\mz7340g\Downloads\systems programing(31st March)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.TCP_Server_Form.resources
+C:\Users\mz7340g\Downloads\systems programing(31st March)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.Properties.Resources.resources
+C:\Users\mz7340g\Downloads\systems programing(31st March)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.csproj.GenerateResource.Cache
+C:\Users\mz7340g\Downloads\systems programing(31st March)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.csproj.CoreCompileInputs.cache
+C:\Users\mz7340g\Downloads\systems programing(31st March)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.exe
+C:\Users\mz7340g\Downloads\systems programing(31st March)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.pdb
+C:\Users\mz7340g\Downloads\systems programing(31st March Game in progress)\TCP_Server\TCP_Server\TCP_Server\bin\Debug\TCP_Server.exe
+C:\Users\mz7340g\Downloads\systems programing(31st March Game in progress)\TCP_Server\TCP_Server\TCP_Server\bin\Debug\TCP_Server.pdb
+C:\Users\mz7340g\Downloads\systems programing(31st March Game in progress)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.csprojResolveAssemblyReference.cache
+C:\Users\mz7340g\Downloads\systems programing(31st March Game in progress)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.About_Form.resources
+C:\Users\mz7340g\Downloads\systems programing(31st March Game in progress)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.TCP_Server_Form.resources
+C:\Users\mz7340g\Downloads\systems programing(31st March Game in progress)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.Properties.Resources.resources
+C:\Users\mz7340g\Downloads\systems programing(31st March Game in progress)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.csproj.GenerateResource.Cache
+C:\Users\mz7340g\Downloads\systems programing(31st March Game in progress)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.csproj.CoreCompileInputs.cache
+C:\Users\mz7340g\Downloads\systems programing(31st March Game in progress)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.exe
+C:\Users\mz7340g\Downloads\systems programing(31st March Game in progress)\TCP_Server\TCP_Server\TCP_Server\obj\x86\Debug\TCP_Server.pdb
